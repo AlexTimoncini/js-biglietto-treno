@@ -11,4 +11,4 @@ if (userAge < 18){
 
 let priceTicket = travelDistance * 0.21 * (1 - discountTicket);
 
-document.getElementById('finalPrice').innerHTML += priceTicket + '€';
+document.getElementById('finalPrice').innerHTML += priceTicket.toFixed(2) + '€';
