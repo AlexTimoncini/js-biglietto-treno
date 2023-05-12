@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>TreniBoolean - Calcolo Biglietto</title>
 </head>
 <body>
-    <h2>Calcola il prezzo del tuo biglietto</h2>
-    <p id="finalPrice">
-        Il prezzo del tuo biglietto é:
-    </p>
-    <form>
-        <input type="number" id="userAge">
-        <input type="number" id="travelDistance">
-        <input type="submit" value="Calcola" onclick="calcPrice()">
-    </form>
+    <main>
+        <div class="ivy_card">
+            <h2>Calcola il prezzo del tuo biglietto</h2>
+            <form>
+                <div class="wrap">
+                    <label for="userAge">Età</label>
+                    <input type="number" id="userAge" min="1">
+                </div>
+                <div class="wrap">
+                    <label for="travelDistance">Distanza in Km</label>
+                    <input type="number" id="travelDistance" min="1">
+                </div>
+                <input type="submit" value="Calcola" onclick="calcPrice()">
+            </form>
+            <p id="finalPrice">
+                Il prezzo del tuo biglietto é:
+            </p>
+        </div>
+    </main>
 
 
 
